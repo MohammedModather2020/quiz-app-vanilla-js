@@ -52,10 +52,32 @@
     <!--* Start Quiz -->
     <div class="quiz">
       <div class="container">
-
+        <div class="box">
+          <div class="count">
+            <h3 class="current">0</h3> 
+            <h3>/</h3> 
+            <h3 class="total">10</h3>
+          </div> <!-- count -->
+          <h3 class="questions-title"></h3>
+          <label id="a1" class="answer"></label>
+          <label id="a2" class="answer"></label>
+          <label id="a3" class="answer"></label>
+          <label id="a4" class="answer"></label>
+          <button class="btn-next">Next</button>
+        </div> <!-- ./box -->
       </div> <!-- ./container -->
     </div> <!-- ./quiz -->
-    
+     <!--* Start Final Quiz -->
+      <div class="final-quiz">
+        <div class="container">
+          <div class="box">
+            <h3 class="result">You answer all questions</h3>
+            <h4 class="score"></h4>
+            <h5 class="try">try aging</h5>
+            <button class="try-agin">Try aging questions</button>
+          </div> <!-- ./box -->
+        </div> <!-- ./container -->
+      </div> <!-- ./final-quiz -->
 
     <script src="js/main.js" type="module"></script>
   </body>

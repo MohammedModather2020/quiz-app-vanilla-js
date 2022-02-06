@@ -15,6 +15,7 @@
 * 2- Section Style
    2.0- Settings
    2.1- Quiz
+   2.2- Final
 * 3- Common Style
    3.0- Container
 */
@@ -41,6 +42,8 @@ body{
 /* 
 /** 2- Section Style */
 /**  2.0- Settings */
+.final-quiz .box,
+.quiz .container .box,
 .settings .container form{
   width: 60%;
   margin: auto;
@@ -81,6 +84,8 @@ body{
   outline: unset;
   border-color: var(--secondaryColor);
 }
+.final-quiz .container .box .try-agin,
+.quiz .container .box .btn-next,
 .settings .container form  .form-control input[type='submit']{
   padding: .5rem 2rem;
   margin: auto;
@@ -100,7 +105,21 @@ body{
 .quiz{
   display: none;
 }
-
+.quiz .container .box .count{
+  display: flex;
+  justify-content: end;
+}
+.quiz .container .box .count h3{
+  color: var(--secondaryColor);
+}
+/** 2.2- Final */
+.final-quiz{
+  text-align: center;
+  display: none;
+}
+.final-quiz .container .box .try-agin{
+  background-color: #FF5959;
+}
 
 /** 3- Common Style */
 /**  3.0- Container */

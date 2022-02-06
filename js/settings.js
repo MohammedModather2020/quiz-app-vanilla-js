@@ -22,7 +22,8 @@ class Settings {
     const categoryId = this.categoriesDom.value;
     const difficulty = this.getDifficulty();
     const url = `https://opentdb.com/api.php?amount=${amount}&category=${categoryId}&difficulty=${difficulty}`;
-    const questions = await this.fetchData(url);
+    const { results } = await this.fetchData(url);
+    console.log(results)
     this.getToggleElements();
   };
   // toggle elements setting and qiz
@@ -40,13 +41,9 @@ class Settings {
     }
   };
   // get fetch data
-  fetchData = (url) => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((res) => {
-        return res.results;
-      })
-      .catch((err) => console.log(err));
+  fetchData = async (url) => {
+    const res = await fetch(url);
+    return await res.json();
   };
 }
 export default Settings;

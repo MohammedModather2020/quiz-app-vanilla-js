@@ -1,0 +1,110 @@
+/* 
+* Template Name             : Quiz App
+* Start Date                : 4-2-2022 8:00 AM
+* End Date                  : 
+* Last Update               :  
+* Version                   : 1.0.0
+* URL                       : https://mohammedmodather2020.github.io/quiz-app-vanilla-js
+* Contact US                : mohammedmodather144@gmail.com
+*/
+/* 
+* 1- Genral Style
+   1.0- Universal Selector
+   1.1- Root Element
+   1.2- Body Element
+* 2- Section Style
+   2.0- Settings
+   2.1- Quiz
+* 3- Common Style
+   3.0- Container
+*/
+/* 
+/** 1- Genral Style */
+/**  1.0- Universal Selector */
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/** 1.1- Root Element */
+:root{
+  --primaryColor:#202046;
+  --secondaryColor:#33CCCC;
+  --ascentColor:#ffffff;
+  overflow-x: hidden;
+}
+/** 1.2- Body Element */
+body{
+  font-family: 'Quintessential', cursive;
+}
+/* 
+/** 2- Section Style */
+/**  2.0- Settings */
+.settings .container form{
+  width: 60%;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.settings .container form .title{
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: bolder;
+}
+.settings .container form label{
+  display: block;
+  font-size: .9rem;
+}
+.settings .container form .form-control select,
+.settings .container form .form-control input[type='number']{
+  width: 100%;
+  margin-block: .3rem;
+  padding: .7rem 1rem;
+  border: 1px solid #f6f6f6;
+  background-color: #f6f6f6;
+  outline: unset;
+  border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
+}
+.settings .container form .form-control select:focus,
+.settings .container form .form-control input[type='number']:focus{
+  outline: unset;
+  border-color: var(--secondaryColor);
+}
+.settings .container form  .form-control input[type='submit']{
+  padding: .5rem 2rem;
+  margin: auto;
+  margin-top: 1rem;
+  display: block;
+  font-family: inherit;
+  border: none;
+  background-color: var(--secondaryColor);
+  color: #ffffff;
+  border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
+}
+/** 2.1- Quiz */
+.quiz{
+  display: none;
+}
+
+
+/** 3- Common Style */
+/**  3.0- Container */
+.container{
+  width: 85%;
+  margin: auto;
+}

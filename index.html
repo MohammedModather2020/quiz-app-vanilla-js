@@ -5,11 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Quiz App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap"/>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
+    <!--* Start Settings -->
+    <div class="settings">
+      <div class="container">
+        <form>
+          <h2 class="title">Quiz App</h2>
+          <div class="form-control">
+            <label for="categories">All Categories</label>
+            <select name="categories" required id="categories">
+              <option disabled selected>Select your categories</option>
+              <option value="9">Genral Knowledge</option>
+              <option value="27">Animals</option>
+              <option value="23">History</option>
+              <option value="21">Sports</option>
+            </select>
+          </div> <!-- ./form-control -->
+          <div class="form-control">
+            <label for="difficulty">Select your difficulty</label>
+            <label for="easy">
+              <input type="radio" value="easy" name="difficulty" id="easy"/>
+              Easy
+            </label>
+            <label for="medium">
+              <input type="radio" value="medium" name="difficulty" id="medium"/>
+              Medium
+            </label>
+            <label for="hard">
+              <input type="radio" value="difficulty" name="difficulty" id="hard"/>
+              hard
+            </label>
+          </div> <!-- ./form-control -->
+          <div class="form-control">
+            <label for="num-questions">Number of questions</label>
+            <input type="number" min="1" max="20" required id="num-questions"/>
+          </div> <!-- ./form-control -->
+          <div class="form-control">
+            <input type="submit" value="Start"/>
+          </div> <!-- ./form-control -->
+        </form>
+      </div> <!-- ./container -->
+    </div> <!-- ./settings -->
+    <!--* Start Quiz -->
+    <div class="quiz">
+      <div class="container">
+
+      </div> <!-- ./container -->
+    </div> <!-- ./quiz -->
     
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>

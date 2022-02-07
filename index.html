@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap"/>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap"
+    />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!--* Start Settings -->
@@ -23,61 +26,79 @@
               <option value="23">History</option>
               <option value="21">Sports</option>
             </select>
-          </div> <!-- ./form-control -->
+          </div>
+          <!-- ./form-control -->
           <div class="form-control">
             <label for="difficulty">Select your difficulty</label>
             <label for="easy">
-              <input type="radio" value="easy" name="difficulty" id="easy"/>
+              <input type="radio" value="easy" name="difficulty" id="easy" />
               Easy
             </label>
             <label for="medium">
-              <input type="radio" value="medium" name="difficulty" id="medium"/>
+              <input
+                type="radio"
+                value="medium"
+                name="difficulty"
+                id="medium"
+              />
               Medium
             </label>
             <label for="hard">
-              <input type="radio" value="difficulty" name="difficulty" id="hard"/>
+              <input type="radio" value="hard" name="difficulty" id="hard" />
               hard
             </label>
-          </div> <!-- ./form-control -->
+          </div>
+          <!-- ./form-control -->
           <div class="form-control">
             <label for="num-questions">Number of questions</label>
-            <input type="number" min="1" max="20" required id="num-questions"/>
-          </div> <!-- ./form-control -->
+            <input type="number" min="1" max="20" required id="num-questions" />
+          </div>
+          <!-- ./form-control -->
           <div class="form-control">
-            <input type="submit" value="Start"/>
-          </div> <!-- ./form-control -->
+            <input type="submit" value="Start" />
+          </div>
+          <!-- ./form-control -->
         </form>
-      </div> <!-- ./container -->
-    </div> <!-- ./settings -->
+      </div>
+      <!-- ./container -->
+    </div>
+    <!-- ./settings -->
     <!--* Start Quiz -->
     <div class="quiz">
       <div class="container">
         <div class="box">
           <div class="count">
-            <h3 class="current">0</h3> 
-            <h3>/</h3> 
+            <h3 class="current">0</h3>
+            <h3>/</h3>
             <h3 class="total">10</h3>
-          </div> <!-- count -->
+          </div>
+          <!-- count -->
           <h3 class="questions-title"></h3>
           <label id="a1" class="answer"></label>
           <label id="a2" class="answer"></label>
           <label id="a3" class="answer"></label>
           <label id="a4" class="answer"></label>
           <button class="btn-next">Next</button>
-        </div> <!-- ./box -->
-      </div> <!-- ./container -->
-    </div> <!-- ./quiz -->
-     <!--* Start Final Quiz -->
-      <div class="final-quiz">
-        <div class="container">
-          <div class="box">
-            <h3 class="result">You answer all questions</h3>
-            <h4 class="score"></h4>
-            <h5 class="try">try aging</h5>
-            <button class="try-agin">Try aging questions</button>
-          </div> <!-- ./box -->
-        </div> <!-- ./container -->
-      </div> <!-- ./final-quiz -->
+        </div>
+        <!-- ./box -->
+      </div>
+      <!-- ./container -->
+    </div>
+    <!-- ./quiz -->
+    <!--* Start Final Quiz -->
+    <div class="final-quiz">
+      <div class="container">
+        <div class="box">
+          <h3 class="result">You answer all questions</h3>
+          <h4 class="score"></h4>
+          <h5 class="try">try aging</h5>
+          <button class="try-agin">Try aging questions</button>
+        </div>
+        <!-- ./box -->
+      </div>
+      <!-- ./container -->
+    </div>
+    <!-- ./final-quiz -->
 
     <script src="js/main.js" type="module"></script>
   </body>

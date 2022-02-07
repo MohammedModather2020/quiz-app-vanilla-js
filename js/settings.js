@@ -1,3 +1,5 @@
+import Quiz from './quiz.js';
+
 class Settings {
   constructor() {
     // define variable
@@ -13,6 +15,7 @@ class Settings {
       document.querySelector('.settings form #medium'),
       document.querySelector('.settings form #hard'),
     ];
+    this.quiz = {};
     this.formStartDom.addEventListener('submit', this.startQuizApp);
   }
   // function start quiz app
@@ -21,9 +24,9 @@ class Settings {
     const amount = this.numQuestionsDom.value;
     const categoryId = this.categoriesDom.value;
     const difficulty = this.getDifficulty();
-    const url = `https://opentdb.com/api.php?amount=${amount}&category=${categoryId}&difficulty=${difficulty}`;
+    const url = `https://opentdb.com/api.php?amount=${amount}&category=${categoryId}&difficulty=${difficulty}&type=multiple`;
     const { results } = await this.fetchData(url);
-    console.log(results)
+    this.quiz = new Quiz(this.quizDom, amount, results);
     this.getToggleElements();
   };
   // toggle elements setting and qiz
